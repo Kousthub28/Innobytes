@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - King Sukh Guest House</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Optional: Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-container">
+        <div class="contact-box">
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> 
+                        Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i> 
+                        kkghosh0099@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i> 
+                        +91 9007062180
+                    </li>
+                </ul>
+                <!-- Social Media Links -->
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="booking_form_handler.php" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="first_name" placeholder="First Name" required>
+                        <input type="text" name="last_name" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Write your message here..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
